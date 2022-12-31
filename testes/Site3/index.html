@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de senha</h1>
+    </header>
+    <main>
+        <p>Insira uma palavra abaixo e uma senha será criada com base nela.</p>
+        <p><strong>APENAS LETRAS</strong></p>
+        <form action="">
+            <div>
+                <input type="text" name="inputSenha" id="iInputSenha" required minlength="5" maxlength="5">
+            </div>
+            <div>
+                <input type="button" name="inputSend" id="iInputSend" value="CRIAR" onclick="criptografar()">
+            </div>
+            <div id="meuOut">
+                
+            </div>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylestyle.css">
+</head>
+<body>
+    <main>
+    <h1>Testes com Javascript</h1>
+    
+        <form action="" method="get">
+        
+            <fieldset>
+                <legend>DADOS</legend>
+                <p>
+                   <label for="inome">Nome: </label>
+                   <input type="text" name="nome" id="inome" required>
+                </p>
+                <p>
+                    <label for="isobre">Sobrenome: </label>
+                    <input type="text" name="sobre" id="isobre" size="20">
+                </p>
+                <p>
+                    <label for="iidade">Idade:</label>
+                    <input type="number" name="idade" id="iidade" min="1" max="120" required>
+                </p>
+                <div id="respostaDois">
+                    <input type="submit" value="ENVIAR" onclick="guardarDados()"> <input type="reset" value="LIMPAR">
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <legend id="aqui">ESPORTE FAVORITO</legend>
+                <div id="radiosSport">
+                    <input type="radio" name="sport" id="ifutebol" value="Futebol"><label for="ifutebol">Futebol</label><br>
+                    <input type="radio" name="sport" id="ivolei" value="Vôlei"><label for="ivolei">Vôleibol</label><br>
+                    <input type="radio" name="sport" id="ibasquete" value="Basquete"><label for="ibasquete">Basquetebol</label><br>
+                    <input type="radio" name="sport" id="ihandebol" value="Handebol"><label for="ihandebol">Handebol</label><br>
+                </div>
+                <div id="esportesDiv">
+                    <input type="submit" value="ENVIAR" onclick="esportes()">
+                </div>
+                <div id="divDoRange">
+                    <label for="irange">De 0 a 5, quanto você gosta do esporte escolhido?</label> <br>
+                    <input type="range" name="rangeee" id="irange" class="corDoRange" min="0" max="5" value="5" oninput="ival.innerHTML = Number(irange.value)">
+                    <output id="ival">5</output>
+                </div>
+                <div id="acabou">
+                    <input type="button" value="PRONTO" id="inputPronto" onclick="finalizar()">
+                </div>
+                <div id="mensagem">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

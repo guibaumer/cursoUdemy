@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        #formulario {
+            width: 500px;
+            margin: auto;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.436);
+            margin-top: 0px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+        }
+        input {
+            margin: 5px;
+        }
+        form {
+            background-color: rgb(177, 127, 127);
+            text-align: right;
+            width: 290px;
+            margin: auto;
+            font-size: 1.2em;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+        }
+        body {
+            background-color: rgb(240,242,245);
+        }
+        #botoes {
+            text-align: center;
+        }
+        div#lugar {
+            position: relative;
+            top: 390px;
+        }
+        div#link {
+            position: relative;
+            top: 450px;
+        }
+        #link > a {
+            color: black;
+            text-decoration: none;
+            background-color: rgb(181, 181, 235);
+            padding: 9px;
+            border-radius: 50%;
+            margin: auto;
+        }
+        #link > a:hover {
+            padding: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <section id="formulario">
+        <form action="">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"><br>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"><br>
+            <label for="iage">Idade:</label>
+            <input type="number" name="age" id="iage"><br>
+            <label for="ipeso">Peso:</label>
+            <input type="number" name="peso" id="ipeso"><br>
+            <label for="ialtura">Altura:</label>
+            <input type="number" name="altura" id="ialtura">
+            <div id="botoes">
+                <input type="button" value="ENVIAR" onclick="criar()">
+                <input type="reset" value="LIMPAR">
+            </div>
+        </form>
+                <div id="lugar"></div>
+                <div id="link"><a href="pag2.html">IR</a></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
