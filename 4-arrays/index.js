@@ -17,3 +17,24 @@ console.log(nomes.slice(0, 2));
 console.log(nomes.slice(0, -1));
 console.log(typeof nomes)
 console.log(nomes instanceof Array)
+
+
+/*ATRIBUIÇÃO VIA DESESTRUTURAÇÃO*/ console.log('ATRIBUIÇÃO VIA DESESTRUTURAÇÃO')
+
+// let [a, b, c] = [1, 2 , 3]
+// console.log(a, b, c)
+
+let a = 'a';
+let b = 'b';
+let c = 'c';
+const letras = [b, c, a];
+[a, b, c] = letras;
+console.log(a,b,c)
+
+const variosNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const [primeiroNumero, segundoNumero, , terceiroNumero, ...resto] = variosNumeros; //resto e valores vazios
+console.log(primeiroNumero, segundoNumero, terceiroNumero, resto)
+
+const complicado = [[0, 1, 2], [4, 6, 8]];
+const [matriz1, matriz2] = complicado;
+console.log(matriz2[0])
