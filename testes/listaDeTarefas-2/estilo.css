@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(249, 238, 224);
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 5px;
+}
+#container {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    margin-top: 130px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.519);
+    background-color: white;
+}
+#relogio {
+    font-size: 3em;
+    text-align: center;
+    background-color: rgba(132, 132, 132, 0.718);
+    width: 190px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+#inputs {
+    text-align: center; 
+}
+#inputs input[type=button] {
+    width: 25%;
+    padding: 5px;
+}
+#inputs input[type=text] {
+    width: 70%;
+    padding: 5px;
+}
+#central {
+    margin-top: 45px;
+}
+p {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+ul {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.adicionado {
+    border: none;
+    font-size: 0.5em;
+    
+    background-color: white;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+span {
+    color: black;
+    font-size: 0.5em;
+    transform: translateY(5px);
+}
+span:hover {
+    color: red;
+}
+
