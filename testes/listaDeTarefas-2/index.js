@@ -21,7 +21,7 @@ document.addEventListener('click', function(e) {
     if(el.classList.contains('adicionado')) {
         //el.style.color = 'red'
         el.parentElement.remove();
-        salvaTarefa()
+        //salvaTarefa()
     }
 })
 
@@ -32,7 +32,7 @@ let item = criaItem();
 item.innerText = texto;
 criaBotao(item)
 ul.appendChild(item)
-salvaTarefa()
+//salvaTarefa()
 
 limpaCaixa();
 }
@@ -67,7 +67,7 @@ function limpaCaixa() {
 
 ////////////////////////////////
 
-function salvaTarefa() {
+/*function salvaTarefa() {
     const liTarefas = ul.querySelectorAll('li');
     const listaDeTarefas = [];
 
@@ -90,4 +90,5 @@ function adicionaSalvas() {
     }
 }
 adicionaSalvas()
+*/
 
