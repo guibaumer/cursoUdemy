@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::after { 
+            /* pode ser usado before também */
+            content: '-';
+            background-color: crimson;
+        }
+        ul li::before {
+            content: 'Ç';
+            color: red;
+        }
+        p::first-letter {
+            font-size: 2em;
+        }
+        p::first-line {
+            background-color: gainsboro;
+        }
+        p::selection {
+            background-color: aquamarine;
+        }
+        .box {
+            box-sizing: border-box;
+            margin-top: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border: 6px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perspiciatis. Nam illum a repellat, beatae eum provident laudantium quas aperiam, nemo amet animi? Tempora reiciendis velit ea quo dolorem ducimus error cupiditate, esse, totam optio consequuntur mollitia perferendis ex. Error iure est veritatis tempore doloremque magnam consectetur cumque velit a nihil illo ad beatae sunt odio nisi iste quis veniam vero, et quia esse? Error, ipsam cumque? Eaque, nesciunt labore dolore vel officiis odit quaerat. Reiciendis amet dignissimos odit perspiciatis qui necessitatibus aliquid veniam dolores! Illum tempora voluptate quam, ut ducimus unde, fuga cumque sapiente repudiandae, dolorum praesentium consequatur accusantium?</p>
+
+    <div class="box"></div>
+</body>
+</html>
