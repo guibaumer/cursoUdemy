@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            display: flex;
+            margin: auto;
+            background-color: cornflowerblue;
+            height: 80vh;
+            width: 80vw;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start; 
+            flex-wrap: wrap;
+        }
+        .itens-flex {
+            background-color: crimson;
+            height: 60px;
+            flex-basis: 60px;
+            margin: 2px;
+        }
+        .itens-flex:nth-child(4) {
+            align-self: center;
+        }
+        .itens-flex:nth-child(2) {
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens-flex">1</div>
+        <div class="itens-flex">2</div>
+        <div class="itens-flex">3</div>
+        <div class="itens-flex">4</div>
+        <div class="itens-flex">5</div>
+        <div class="itens-flex">6</div>
+    </div>
+</body>
+</html>

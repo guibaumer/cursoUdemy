@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .column {
+            background-color: darkcyan;
+            margin: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: white;
+            justify-content: space-between;
+        }
+        .gallery .imgs {
+            flex-basis: 60px;
+            height: 50px;
+            background-color: red;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima ad animi impedit quia beatae corrupti explicabo accusantium suscipit tenetur non nisi, unde, debitis ea, aliquid minus mollitia! Hic, voluptates quidem?</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae impedit eos atque, magnam ipsum amet architecto soluta, et tempore non culpa corporis veritatis quam eligendi nisi. Sit, eos et?</p></div>
+        <div class="column"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusantium delectus architecto cumque veniam consectetur pariatur dolore? Consequuntur minima nesciunt iure, corporis sequi in amet quis aliquam aperiam placeat id?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloribus odio molestiae distinctio eaque impedit aut reiciendis sequi, id, beatae aspernatur explicabo earum obcaecati ut totam sit. Alias, in temporibus.</p>
+        <div class="gallery">
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
