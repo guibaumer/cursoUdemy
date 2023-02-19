@@ -1,0 +1,25 @@
+{
+  "name": "cursoudemy",
+  "version": "1.0.0",
+  "description": "Exercícios e projetos de javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guibaumer/cursoUdemy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guibaumer/cursoUdemy/issues"
+  },
+  "homepage": "https://github.com/guibaumer/cursoUdemy#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
