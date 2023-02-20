@@ -551,6 +551,13 @@ font-size: 1.7rem;
     }
 }
 @media (max-width:400px) {
+   aside.menu {
+    padding: 10px;
+   }
+   section#back-1 div.intro-text {
+    margin-top: 0px;
+    width: 100%;
+   }
     section.main-bg#back-1 h2 {
         font-size: 4rem;
     }
