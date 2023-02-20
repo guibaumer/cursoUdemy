@@ -11,7 +11,7 @@ body {
 }
 .ooo {
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,9 +96,15 @@ h1 {
         font-size: 30px;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 665px) {
     h1 {
         font-size: 29px;
+    }
+    .lugar{
+        height: 40px;
+    }
+    input {
+        height: 40px;
     }
 } 
 
