@@ -1,6 +1,3 @@
-
-    
-
     const botao = document.querySelector('.botao');
     const lugar = document.querySelector('.place');
     const question = document.querySelector('.material-symbols-outlined');
