@@ -5,8 +5,9 @@
     padding: 0px;
     margin: 0px;
 }
-html {
-    height: 100vh;
+html, body {
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
 body {
     /* background-color: aquamarine; */
@@ -22,7 +23,7 @@ h1 {
 }
 .box-all {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
