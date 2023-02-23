@@ -7,7 +7,7 @@
 }
 html, body {
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+
 }
 body {
     /* background-color: aquamarine; */
@@ -19,7 +19,6 @@ body {
 }
 h1 {
     font-size: 1.4em;
-    color: rgb(72, 72, 18);
 }
 .box-all {
     width: 100vw;
@@ -179,5 +178,11 @@ div.wrong {
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
         cursor: pointer;
+    }
+
+}
+@media (orientation: portrait) {
+    .box-all {
+        height: 90vh;
     }
 }
