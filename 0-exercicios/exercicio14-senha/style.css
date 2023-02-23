@@ -5,6 +5,9 @@
     padding: 0px;
     margin: 0px;
 }
+html {
+    height: 100vh;
+}
 body {
     /* background-color: aquamarine; */
     background-image: linear-gradient(to bottom right, aquamarine, rgb(102, 204, 170));
@@ -15,6 +18,7 @@ body {
 }
 h1 {
     font-size: 1.4em;
+    color: yellow;
 }
 .box-all {
     width: 100vw;
@@ -30,14 +34,7 @@ span.mso-person {
     right: 10px;
     font-size: 2.4em;
 }
-span.mso-person:hover {
-    transform: translateX(-10px);
-    transition: .3s ease-in;
-    color: black;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    cursor: pointer;
-}
+
 .hidden {
     display: none;
     position: absolute;
@@ -86,12 +83,11 @@ span.mso-person:hover {
     transform: translateY(4px);
     height: 18px;
     width: 18px;
-
 }
 .lugar {
     margin: 7px;
     margin-top: 0px;
-    padding: 2px;
+    padding: 3px;
 }
 .lugar p {
     color: rgb(26, 153, 110);
@@ -121,6 +117,7 @@ span.mso-person:hover {
     padding: 2px;
     margin-bottom: 5px;
     margin-top: 0px;
+    height: 35px;
 }
 .input-n.phone::placeholder {
     color: rgb(202, 200, 200);
@@ -136,6 +133,8 @@ input.button {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
+    height: 35px;
+
 }
 input.button:hover {
     background-color: black;
@@ -170,5 +169,13 @@ div.wrong {
     }
     .options p {
         font-size: 1.1em;
+    }
+    span.mso-person:hover {
+        transform: translateX(-10px);
+        transition: .3s ease-in;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
