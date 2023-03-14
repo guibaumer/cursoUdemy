@@ -1,8 +1,8 @@
 const homeModel = require('../models/homeModel')
 
 homeModel.create({
-    titulo: 'testes',
-    descricao: 'deecricao teste'
+    titulo: 'testes dois',
+    descricao: 'é outra coisa'
 }).then(dados => console.log(dados)).catch(e => console.log(e))
 
 exports.paginaInicial = (req, res) => {

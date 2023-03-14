@@ -1,0 +1,22 @@
+<%- include('includes/head'); %>
+<body>
+    <section>
+        <h1>
+            <!-- <%= titulo %> <%- titulo %> -->
+            <% if(typeof titulo !== 'undefined') { %>           
+            <%= titulo %>
+            <% } %>
+        </h1>
+        <h2>
+            <% numeros.forEach(num => { %>
+                <%= num %> <br>
+            <% }); %>
+        </h2>
+        <form action="/" method="post">
+            <label for="">nome</label>
+            <input type="text" name="cliente" id="">
+            <button>submit</button>
+        </form>
+    </section>
+</body>
+</html>
