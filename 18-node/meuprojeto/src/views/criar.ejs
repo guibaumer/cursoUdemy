@@ -1,0 +1,17 @@
+<%- include('./includes/nav.ejs') %>
+
+<h2>Crie seu contato</h2>
+
+<%- include('./includes/messages.ejs') %>
+
+    <section class="container creation">
+        <form class="form-contato" action="/editar/register" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <p><input type="text" class="nome" name="nome" id="" placeholder="Nome"></p>
+            <p><input type="text" class="sobrenome" name="sobrenome" id="" placeholder="Sobrenome"></p>
+            <p><input type="text" class="email" name="email" id="" placeholder="Seu email"></p>
+            <p><input type="submit" class="enviar" value="SALVAR"></p>
+        </form>
+    </section>
+
+<%- include('./includes/footer.ejs') %>

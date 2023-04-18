@@ -1,0 +1,26 @@
+<%- include('./includes/nav.ejs') %>
+
+<h2>Edite seu contato</h2>
+
+<%- include('./includes/messages.ejs') %>
+
+    <section class="container creation">
+
+        <% if(contato._id) { %>
+            <form class="form-contato" action="/contato/editar/<%= contato._id %>" method="post">
+        <% } else { %>
+            <form class="form-contato" action="/editar/register" method="post">
+        <% } %>
+
+
+
+   
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <p><input type="text" class="nome" name="nome" id="" placeholder="Nome" value="<%= contato.nome %>"></p>
+            <p><input type="text" class="sobrenome" name="sobrenome" id="" placeholder="Sobrenome" value="<%= contato.sobrenome %>"></p>
+            <p><input type="text" class="email" name="email" id="" placeholder="Seu email" value="<%= contato.email %>"></p>
+            <p><input type="submit" class="enviar" value="SALVAR"></p>
+        </form>
+    </section>
+
+<%- include('./includes/footer.ejs') %>

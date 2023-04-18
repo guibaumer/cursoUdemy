@@ -1,13 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
-</head>
-<body>
-    <h1>it works</h1>
-    <!-- <script type="application/javascript" src="/main.js"></script> -->
-</body>
-</html>
+<%- include('./includes/nav.ejs') %>
+<h2>Bem-vindo!</h2>
+<p class="apresentation">Veja seus contatos abaixo.</p>
+    <section class="container">
+        <% if(contatos.length > 0) { %>
+        <table>
+            <% contatos.forEach(contato => { %>
+                <tr>
+                    <td><%= contato.nome %></td>
+                    <td><%= contato.sobrenome %></td>
+                    <td><%= contato.email %></td>
+                    <td><a class="editar "href="/editar/editar/<%= contato._id %>">Editar</a></td>
+                    <td><a class="excluir" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
+                </tr>
+            <% }) %>
+        </table>
+        <% } else { %>
+            <p>A lista está vazia.</p>
+        <% } %>
+    </section>
+
+   <%- include('./includes/footer.ejs') %>
+
+ 
